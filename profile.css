@@ -1,0 +1,115 @@
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+font-family:'Poppins', sans-serif;
+}
+body{
+	display:flex;
+	height:100vh;
+	justify-content:center;
+	align-items:center;
+	padding:10px;
+	background:linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+.container{
+	max-width:700px;
+	width:100%;
+	background:#fff;
+	padding:25px 30px;
+	border-radius:5px;
+}
+.container .title{ 
+	font-size:25px;
+	font-weight:bolder;
+	color:black;
+	position:relative;
+}
+.container .title::before{
+	content: '';
+	position:absolute;
+	left:0;
+	bottom:0;
+	height:3px;
+	width:30px;
+	background:linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+.container .form .user-details{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	margin-top:5%;
+}
+.form .user-details .input-box{
+	width: 100%;
+	margin-bottom: 15px;
+}
+.form .user-details .input-box .details{
+	font-weight: Bold;
+	display:block;
+	color:black;
+	margin-bottom:5px;
+}
+.form .user-details .input-box .gender{
+	margin-left:3%;
+	
+}
+.form .user-details .input-box .email{
+	margin-left:4.9%;
+}
+.form .user-details .input-box .uname{
+	margin-left:-0.5%;
+}
+.form .user-details .input-box .name{
+	margin-left:-0.5%;
+}
+.container .img{
+	margin-left:70%;
+	
+}
+.user-details .input-box input{
+	height:45px;
+	width:50%;
+	outline:none;
+	font-size:18px;
+	border:none;
+	padding-left: 15px;
+	font-weight:bold;
+	color:black;
+}
+.form .gender-details .gender-title{
+	font-size: 20px;
+	font-weight: bold;
+}
+.form .gender-details .category{
+	width:80%;
+	display:flex;
+	margin: 14px 0;
+	justify-content:left;
+}
+.gender-details .category label{
+	display:flex;
+	align-items: center;
+	margin-right: 20px;
+}
+.gender-details .category .dot{
+	height: 18px;
+	width: 18px;
+	border-radius: 50%;
+	margin-right: 10px;
+	background: #d9d9d9;
+	border: 5px solid transparent;
+	transition: all 0.3s ease;
+}
+input .gender{
+	margin:100%;
+}
+.form .img{
+	width: calc(100% / 2 - 20px);
+	margin-bottom: 15px;
+}
+.form .img .deta{
+	font-weight: Bold;
+	display:block;
+	margin-bottom:5px;
+}
